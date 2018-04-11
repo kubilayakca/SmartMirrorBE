@@ -1,0 +1,22 @@
+
+spring:
+  profiles:
+    active: development
+  jackson:
+   serialization:
+      write-dates-as-timestamps: false 
+      write-enums-using-index: true
+
+server:
+  port: 8080
+
+banner:
+  location: classpath:banner.txt
+---
+
+spring:
+  profiles: production
+---
+
+spring:
+  profiles: development
